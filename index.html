@@ -1,0 +1,1493 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Osmerini Luciano Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="fas fa-laptop" style="font-size: x-large"></span>
+						</div>
+						
+						<!-- Language Selector -->
+						<div id="language-selector" style="position: absolute; top: 20px; right: 20px; z-index: 1000;">
+							<button onclick="toggleLanguage()" id="lang-toggle-btn" style="
+								background: rgba(255, 255, 255, 0.1);
+								backdrop-filter: blur(10px);
+								-webkit-backdrop-filter: blur(10px);
+								border: none;
+								color: white;
+								padding: 12px 18px;
+								border-radius: 15px;
+								cursor: pointer;
+								font-weight: 600;
+								font-size: 14px;
+								letter-spacing: 1px;
+								box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+								transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+								display: flex;
+								align-items: center;
+								gap: 10px;
+								position: relative;
+								overflow: hidden;
+								text-transform: uppercase;
+							">
+								<div style="
+									position: absolute;
+									top: 0;
+									left: 0;
+									right: 0;
+									bottom: 0;
+									background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+									opacity: 0;
+									transition: opacity 0.3s ease;
+									pointer-events: none;
+								" id="lang-btn-overlay"></div>
+								<i class="fas fa-globe" style="
+									font-size: 16px;
+									animation: float 3s ease-in-out infinite;
+								"></i>
+								<span id="current-lang" style="font-weight: 700;">ES</span>
+								<div style="
+									width: 6px;
+									height: 6px;
+									background: #00ff88;
+									border-radius: 50%;
+									box-shadow: 0 0 10px #00ff88;
+									animation: pulse 2s ease-in-out infinite;
+								"></div>
+							</button>
+						</div>
+						
+						<style>
+							@keyframes float {
+								0%, 100% { transform: translateY(0px); }
+								50% { transform: translateY(-2px); }
+							}
+							
+							@keyframes pulse {
+								0%, 100% { opacity: 1; transform: scale(1); }
+								50% { opacity: 0.7; transform: scale(1.2); }
+							}
+							
+							@keyframes ripple {
+								0% { transform: scale(0); opacity: 1; }
+								100% { transform: scale(4); opacity: 0; }
+							}
+							
+							#lang-toggle-btn:hover {
+								transform: translateY(-2px) scale(1.05);
+								box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+							}
+							
+							#lang-toggle-btn:hover #lang-btn-overlay {
+								opacity: 1;
+							}
+							
+							#lang-toggle-btn:active {
+								transform: translateY(-1px) scale(1.02);
+							}
+							
+							#lang-toggle-btn.english-mode {
+								background: rgba(255, 107, 107, 0.15);
+							}
+							
+							#lang-toggle-btn.spanish-mode {
+								background: rgba(33, 150, 243, 0.15);
+							}
+						</style>
+						
+						<div class="content">
+							<div class="inner">
+								<h1>Osmerini Luciano</h1>
+								<p data-translate="header-subtitle">Desarrollador Front end & Soporte IT<br />
+									</p>
+							</div>
+							<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/luciano-osmerini/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="mailto:mi_losmerini@outlook.es?subject=Asunto%20del%20correo" target="_blank" class="icon brands fa-brands fa-google"><span class="label">mail</span></a></li>
+									<li><a href="https://wa.me/543516566274" target="_blank" class="icon brands fa-whatsapp"><span class="label">WhatsApp</span></a></li>
+									<li><a href="https://github.com/Luciano-Osmerini" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="archivos/CV_Luciano_Osmerini.EN.pdf" target="_blank" class="icon solid fa-download"><span class="label" data-translate="nav-cv">Curriculum</span></a></li>
+								</ul>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro" data-translate="nav-about">Sobre Mi</a></li>
+								<li><a href="#work" data-translate="nav-work">Trabajos</a></li>
+								<li><a href="#about" data-translate="nav-studies">Estudios</a></li>
+								<li><a href="#about2" data-translate="nav-freelance">Freelance</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<article id="intro">
+								<h2 class="major" data-translate="about-title">Sobre Mi</h2>
+								<span class="image main"><img src="images/ima1.jpg" width="100%" alt="" /></span>
+								<p data-translate="about-text">Soy profesional en Tecnologías de la Información, apasionado por sus diversas áreas. Desde temprana edad, me familiaricé con computadoras y sistemas, lo que me permitió adquirir una amplia experiencia en administración de sistemas, soporte técnico y desarrollo.<br><br>Estoy especializado en la resolución de incidencias IT y automatización de procesos, habilidades que me permiten identificar y resolver problemas técnicos de manera eficaz, brindando soporte a usuarios finales. Poseo conocimientos en redes, seguridad informática, bases de datos y herramientas de gestión IT.<br><br>Destaco por mi capacidad para trabajar en equipo y mi responsabilidad al mejorar sistemas y procesos tecnológicos en entornos corporativos. Cuento con más de 6 años de experiencia en manejo de bases de datos y soporte técnico.
+								</p>
+								<div style="text-align: center; margin: 30px 0;">
+									<h3 data-translate="contact-interest">¿Interesado en trabajar conmigo?</h3>
+									<div class="content">
+										<ul class="actions">
+											<li><a href="mailto:mi_losmerini@outlook.es?subject=Propuesta%20de%20Trabajo" class="button primary large"><i class="fas fa-envelope"></i> <span data-translate="contact-email">Contactar por Email</span></a></li>
+											<li><a href="https://wa.me/543516566274" target="_blank" class="button large"><i class="fab fa-whatsapp"></i> <span data-translate="contact-whatsapp">WhatsApp</span></a></li>
+										</ul>
+									</div>
+								</div>
+							</article>
+
+						<!-- Work -->
+							<article id="work">
+								<h2 class="major" data-translate="work-title">Empleos/Cargos</h2>
+								<span class="image main"><img src="images/ima3.jpg" alt="" /></span>
+								
+								<h3><strong data-translate="work-dev-title">Desarrollador Jr – Atento S.A.</strong></h3>
+								<p><em data-translate="work-dev-date">Mayo 2025 – Actualidad</em></p>
+								
+								<p><strong data-translate="work-dev-area">Área de Transformación:</strong> <span data-translate="work-dev-desc">Desarrollo y ejecuto proyectos especializados utilizando <strong>Python integrado con SQL</strong> para análisis de datos y automatización de procesos en web CRM con <strong>HTML</strong> y <strong>Bootstrap.</strong></span><br>
+									</p>
+								
+								<h3><strong data-translate="work-analyst-title">Analista Técnico Jr. en Soporte IT – Atento S.A.</strong></h3>
+								<p><em data-translate="work-analyst-date">Septiembre 2022 – Actualidad</em></p>
+								<p><strong data-translate="work-analyst-subtitle">Soporte Técnico Especializado:</strong> <span data-translate="work-analyst-intro">Me especializo en la atención y resolución de incidentes de primer y segundo nivel, garantizando diagnósticos precisos y soluciones efectivas. Mis responsabilidades técnicas incluyen:</span></p>
+								
+								<ul>
+									<li><strong data-translate="work-infra-title">Gestión integral de infraestructura:</strong> <span data-translate="work-infra-desc">Instalación, configuración y mantenimiento de hardware y software en equipos de escritorio y portátiles.</span></li>
+									<li><strong data-translate="work-ticketing-title">Administración de sistemas de ticketing:</strong> <span data-translate="work-ticketing-desc">Manejo avanzado de <em>ServiceNow</em> y <em>SelfService</em> para registro, priorización y resolución de incidencias.</span></li>
+									<li><strong data-translate="work-database-title">Gestión de bases de datos empresariales:</strong> <span data-translate="work-database-desc">Administración de <em>MySQL</em>, <em>SQL Server</em>, <em>Active Directory</em> y configuraciones especializadas en <em>Regedit</em>.</span></li>
+									<li><strong data-translate="work-remote-title">Soporte técnico remoto:</strong> <span data-translate="work-remote-desc">Implementación de soluciones mediante <em>ConfigMGR</em>, <em>TeamViewer</em> y <em>AnyDesk</em> para asistencia en múltiples ubicaciones.</span></li>
+									<li><strong data-translate="work-network-title">Administración de redes corporativas:</strong> <span data-translate="work-network-desc">Diagnóstico y resolución de problemas en redes <em>LAN/Wi-Fi</em>, configuración de routers empresariales y soporte técnico en conexiones <em>VPN</em>.</span></li>
+									<li><strong data-translate="work-maintenance-title">Mantenimiento preventivo especializado:</strong> <span data-translate="work-maintenance-desc">Programas de mantenimiento, limpieza técnica y reemplazo estratégico de componentes.</span></li>
+									<li><strong data-translate="work-docs-title">Documentación técnica profesional:</strong> <span data-translate="work-docs-desc">Elaboración de manuales especializados, procedimientos técnicos y desarrollo de <em>bases de conocimiento corporativas</em>.</span></li>
+									<li><strong data-translate="work-collaboration-title">Colaboración interdisciplinaria:</strong> <span data-translate="work-collaboration-desc">Trabajo conjunto con equipos de infraestructura y liderazgo en la <em>implementación</em>, testing y despliegue de nuevas tecnologías empresariales.</span></li>
+								</ul>
+							</article>
+
+						<!-- About -->
+							<article id="about">
+								<h2 class="major" data-translate="studies-title">Formacion</h2>
+								<span class="image main"><img src="images/ima2.jpg" alt="" /></span>
+								<p><strong data-translate="studies-subtitle">ESTUDIOS</strong><br><br><span data-translate="studies-school">TECLAB Instituto Técnico Superior</span><br><ul>♦ <span data-translate="studies-current">2023 - Actualidad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Técnico Superior en Programación, cursando 2° año</span><br>♦ <span data-translate="studies-completed">2023 - 2024&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Auxiliar en Programación, Finalizado</span></ul><strong data-translate="technologies-title"> Empleo los siguientes lenguajes y tecnologías:</strong><ul><br>♦ <i class="fab fa-html5" style="color: #e34c26;"></i> HTML&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ♦ <i class="fab fa-github" style="color: #333;"></i> GitHub<br>♦ <i class="fab fa-js-square" style="color: #f7df1e;"></i> JavaScript&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ <i class="fab fa-git-alt" style="color: #f05032;"></i> GIT<br>♦ <i class="fab fa-css3-alt" style="color: #1572b6;"></i> CSS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ <i class="fas fa-rocket" style="color: #ff6c37;"></i> Postman<br>♦ <i class="fas fa-database" style="color: #336791;"></i> SQL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ♦ <i class="fas fa-code" style="color: #007acc;"></i> Visual Studio Code<br>♦ <i class="fab fa-python" style="color: #3776ab;"></i> Python<br></ul>
+
+<strong data-translate="skills-level-title">Nivel de Habilidades Técnicas:</strong><br><br>
+<div style="margin: 20px 0;">
+    <div style="margin: 10px 0;">
+        <span><i class="fab fa-html5" style="color: #e34c26;"></i> HTML/CSS</span>
+        <div style="background: #ddd; border-radius: 10px; overflow: hidden; margin: 5px 0;">
+            <div style="background: linear-gradient(90deg, #e34c26, #1572b6); width: 70%; height: 20px; border-radius: 10px;"></div>
+        </div>
+        <small data-translate="skill-intermediate-70">Intermedio (70%)</small>
+    </div>
+    
+    <div style="margin: 10px 0;">
+        <span><i class="fab fa-js-square" style="color: #f7df1e;"></i> JavaScript</span>
+        <div style="background: #ddd; border-radius: 10px; overflow: hidden; margin: 5px 0;">
+            <div style="background: #f7df1e; width: 50%; height: 20px; border-radius: 10px;"></div>
+        </div>
+        <small data-translate="skill-intermediate-50">Intermedio (50%)</small>
+    </div>
+    
+    <div style="margin: 10px 0;">
+        <span><i class="fab fa-python" style="color: #3776ab;"></i> Python</span>
+        <div style="background: #ddd; border-radius: 10px; overflow: hidden; margin: 5px 0;">
+            <div style="background: #3776ab; width: 70%; height: 20px; border-radius: 10px;"></div>
+        </div>
+        <small data-translate="skill-intermediate-70">Intermedio (70%)</small>
+    </div>
+    
+    <div style="margin: 10px 0;">
+        <span><i class="fas fa-database" style="color: #336791;"></i> SQL/Bases de Datos</span>
+        <div style="background: #ddd; border-radius: 10px; overflow: hidden; margin: 5px 0;">
+            <div style="background: #336791; width: 50%; height: 20px; border-radius: 10px;"></div>
+        </div>
+        <small data-translate="skill-intermediate-50">Intermedio (50%)</small>
+    </div>
+    
+    <div style="margin: 10px 0;">
+        <span><i class="fab fa-git-alt" style="color: #f05032;"></i> Git/GitHub</span>
+        <div style="background: #ddd; border-radius: 10px; overflow: hidden; margin: 5px 0;">
+            <div style="background: #f05032; width: 85%; height: 20px; border-radius: 10px;"></div>
+        </div>
+        <small data-translate="skill-advanced-85">Avanzado (85%)</small>
+    </div>
+</div>
+
+<strong data-translate="professional-skills-title">Habilidades Profesionales:</strong><br><br>
+<ul>
+    <li><i class="fas fa-tools" style="color: #666;"></i> <span data-translate="skill-hardware">Experto en Hardware de sistemas PC</span></li>
+    <li><i class="fas fa-globe" style="color: #4285f4;"></i> <span data-translate="skill-english">Inglés: Medio-Fluido</span></li>
+    <li><i class="fab fa-aws" style="color: #ff9900;"></i> <span data-translate="skill-aws">AWS: Nivel Inicial</span></li>
+    <li><i class="fas fa-paint-brush" style="color: #ff6b6b;"></i> <span data-translate="skill-uxui">Prototipado UX/UI: Nivel Intermedio-Avanzado</span></li>
+</ul>
+								</p>
+							</article>
+
+								<!-- About2 -->
+							<article id="about2">
+								<h2 class="major" data-translate="freelance-title">Freelance</h2>
+								<span class="image main"><img src="images/ima6.jpg" alt="" /></span>
+								<p><strong data-translate="freelance-subtitle">Desarrollo Front-end</strong><br>
+<span data-translate="freelance-description">Creo interfaces web atractivas y funcionales, optimizadas para todos los dispositivos. Trabajo de forma remota entregando proyectos con altos estándares de calidad.</span><br><br>
+<strong data-translate="featured-projects">Proyectos destacados:</strong><br><br>
+<span data-translate="inmobiliaria-project">Sitio Web para Inmobiliaria. Plataforma web moderna para inmobiliaria con catálogo de propiedades interactivo, búsqueda avanzada y sistema de contacto. <strong>Proyecto en desarrollo - Próximamente disponible</strong></span>
+
+<!-- Carrusel de imágenes Inmobiliaria -->
+<div style="position: relative; max-width: 100%; margin: 20px 0; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+	<div id="inmobiliaria-carousel-container" style="display: flex; transition: transform 0.5s ease-in-out;">
+		<div style="min-width: 100%; position: relative;">
+			<img src="images/inmo.jpg" alt="Inmobiliaria - Página Principal" style="width: 100%; height: 300px; object-fit: cover;">
+			<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 20px;">
+				<h4 style="margin: 0; font-size: 18px;">Página Principal - Desktop <span style="color: #4a90e2;">[DEMO]</span></h4>
+				<p style="margin: 5px 0 0 0; font-size: 14px;">Vista principal con búsqueda de propiedades - En desarrollo</p>
+			</div>
+		</div>
+		<div style="min-width: 100%; position: relative;">
+			<img src="images/inmo1.jpg" alt="Inmobiliaria - Catálogo" style="width: 100%; height: 300px; object-fit: cover;">
+			<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 20px;">
+				<h4 style="margin: 0; font-size: 18px;">Catálogo de Propiedades - Desktop <span style="color: #4a90e2;">[DEMO]</span></h4>
+				<p style="margin: 5px 0 0 0; font-size: 14px;">Sistema completo de listado y filtros</p>
+			</div>
+		</div>
+		<div style="min-width: 100%; position: relative;">
+			<img src="images/inmo2.jpg" alt="Inmobiliaria - Detalle" style="width: 100%; height: 300px; object-fit: cover;">
+			<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 20px;">
+				<h4 style="margin: 0; font-size: 18px;">Detalle de Propiedad - Desktop <span style="color: #4a90e2;">[DEMO]</span></h4>
+				<p style="margin: 5px 0 0 0; font-size: 14px;">Vista detallada con galería y características</p>
+			</div>
+		</div>
+		<div style="min-width: 100%; position: relative;">
+			<img src="images/inmo3.jpg" alt="Inmobiliaria - Móvil Principal" style="width: 50%; height: 300px; object-fit: cover; margin: 0 auto; display: block;">
+			<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 20px;">
+				<h4 style="margin: 0; font-size: 18px;">Vista Móvil - Principal <span style="color: #4a90e2;">[DEMO]</span></h4>
+				<p style="margin: 5px 0 0 0; font-size: 14px;">Diseño responsive optimizado para móviles</p>
+			</div>
+		</div>
+		<div style="min-width: 100%; position: relative;">
+			<img src="images/inmo1.jpg" alt="Inmobiliaria - Móvil Búsqueda" style="width: 50%; height: 300px; object-fit: cover; margin: 0 auto; display: block;">
+			<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 20px;">
+				<h4 style="margin: 0; font-size: 18px;">Vista Móvil - Búsqueda <span style="color: #4a90e2;">[DEMO]</span></h4>
+				<p style="margin: 5px 0 0 0; font-size: 14px;">Interfaz móvil intuitiva con filtros</p>
+			</div>
+		</div>
+		<div style="min-width: 100%; position: relative;">
+			<img src="images/inmo2.jpg" alt="Inmobiliaria - Móvil Contacto" style="width: 50%; height: 300px; object-fit: cover; margin: 0 auto; display: block;">
+			<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 20px;">
+				<h4 style="margin: 0; font-size: 18px;">Vista Móvil - Contacto <span style="color: #4a90e2;">[DEMO]</span></h4>
+				<p style="margin: 5px 0 0 0; font-size: 14px;">Sistema de contacto y consultas</p>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Botones de navegación para inmobiliaria -->
+	<button onclick="previousInmobiliariaSlide()" style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(255,255,255,0.8); border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.3); transition: all 0.3s;">
+		<i class="fas fa-chevron-left" style="color: #333;"></i>
+	</button>
+	<button onclick="nextInmobiliariaSlide()" style="position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(255,255,255,0.8); border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.3); transition: all 0.3s;">
+		<i class="fas fa-chevron-right" style="color: #333;"></i>
+	</button>
+	
+	<!-- Indicadores para inmobiliaria -->
+	<div style="position: absolute; bottom: 15px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px;">
+		<div id="inmobiliaria-dot-0" onclick="goToInmobiliariaSlide(0)" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.8); cursor: pointer; transition: all 0.3s;"></div>
+		<div id="inmobiliaria-dot-1" onclick="goToInmobiliariaSlide(1)" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s;"></div>
+		<div id="inmobiliaria-dot-2" onclick="goToInmobiliariaSlide(2)" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s;"></div>
+		<div id="inmobiliaria-dot-3" onclick="goToInmobiliariaSlide(3)" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s;"></div>
+		<div id="inmobiliaria-dot-4" onclick="goToInmobiliariaSlide(4)" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s;"></div>
+		<div id="inmobiliaria-dot-5" onclick="goToInmobiliariaSlide(5)" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s;"></div>
+	</div>
+	
+	<!-- Indicador de vista inmobiliaria -->
+	<div id="inmobiliaria-view-indicator" style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.7); color: white; padding: 8px 12px; border-radius: 20px; font-size: 12px; font-weight: bold;">
+		<i class="fas fa-desktop"></i> Desktop
+	</div>
+</div>
+
+<div class="content">
+							<ul class="actions" style="text-align: center;">
+								<li><a href="https://luciano-osmerini.github.io/Inmobiliaria/" target="_blank" class="button primary large inmobiliaria-button-special" data-translate="btn-inmobiliaria">Ver Demo - Inmobiliaria</a></li>
+							</ul></p>
+
+<span data-translate="herreria-project">Sitio Web para Herreria. Se desarrollo una pagina completa en la cual se pueden solicitar distintos servicios de herreria, solicitar turnos online con distintos enlaces a sus respectivas redes y vias de comunicacion</span>
+
+<!-- Carrusel de imágenes Herrería -->
+<div style="position: relative; max-width: 100%; margin: 20px 0; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+	<div id="carousel-container" style="display: flex; transition: transform 0.5s ease-in-out;">
+		<div style="min-width: 100%; position: relative;">
+			<img src="images/portcor1.jpg" alt="Portcor Herrería - Página Principal" style="width: 100%; height: 300px; object-fit: cover;">
+			<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 20px;">
+				<h4 style="margin: 0; font-size: 18px;">Página Principal - Desktop</h4>
+				<p style="margin: 5px 0 0 0; font-size: 14px;">Vista principal del sitio web de herrería</p>
+			</div>
+		</div>
+		<div style="min-width: 100%; position: relative;">
+			<img src="images/portcor2.jpg" alt="Portcor Herrería - Servicios" style="width: 100%; height: 300px; object-fit: cover;">
+			<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 20px;">
+				<h4 style="margin: 0; font-size: 18px;">Servicios de Herrería - Desktop</h4>
+				<p style="margin: 5px 0 0 0; font-size: 14px;">Catálogo completo de trabajos y servicios</p>
+			</div>
+		</div>
+		<div style="min-width: 100%; position: relative;">
+			<img src="images/portcor3.jpg" alt="Portcor Herrería - Galería" style="width: 100%; height: 300px; object-fit: cover;">
+			<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 20px;">
+				<h4 style="margin: 0; font-size: 18px;">Galería de Trabajos - Desktop</h4>
+				<p style="margin: 5px 0 0 0; font-size: 14px;">Muestra de proyectos realizados</p>
+			</div>
+		</div>
+		<div style="min-width: 100%; position: relative;">
+			<img src="images/portcorcel1.jpg" alt="Portcor Herrería - Móvil Principal" style="width: 50%; height: 300px; object-fit: cover; margin: 0 auto; display: block;">
+			<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 20px;">
+				<h4 style="margin: 0; font-size: 18px;">Vista Móvil - Principal</h4>
+				<p style="margin: 5px 0 0 0; font-size: 14px;">Diseño responsive optimizado para móviles</p>
+			</div>
+		</div>
+		<div style="min-width: 100%; position: relative;">
+			<img src="images/portcorcel2.jpg" alt="Portcor Herrería - Móvil Servicios" style="width: 50%; height: 300px; object-fit: cover; margin: 0 auto; display: block;">
+			<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 20px;">
+				<h4 style="margin: 0; font-size: 18px;">Vista Móvil - Servicios</h4>
+				<p style="margin: 5px 0 0 0; font-size: 14px;">Interfaz móvil intuitiva y fácil navegación</p>
+			</div>
+		</div>
+		<div style="min-width: 100%; position: relative;">
+			<img src="images/portcorcel3.jpg" alt="Portcor Herrería - Móvil Contacto" style="width: 50%; height: 300px; object-fit: cover; margin: 0 auto; display: block;">
+			<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 20px;">
+				<h4 style="margin: 0; font-size: 18px;">Vista Móvil - Contacto</h4>
+				<p style="margin: 5px 0 0 0; font-size: 14px;">Formularios y contacto optimizados</p>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Botones de navegación -->
+	<button onclick="previousSlide()" style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(255,255,255,0.8); border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.3); transition: all 0.3s;">
+		<i class="fas fa-chevron-left" style="color: #333;"></i>
+	</button>
+	<button onclick="nextSlide()" style="position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(255,255,255,0.8); border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.3); transition: all 0.3s;">
+		<i class="fas fa-chevron-right" style="color: #333;"></i>
+	</button>
+	
+	<!-- Indicadores -->
+	<div style="position: absolute; bottom: 15px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px;">
+		<div onclick="goToSlide(0)" id="dot-0" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.8); cursor: pointer; transition: all 0.3s;"></div>
+		<div onclick="goToSlide(1)" id="dot-1" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s;"></div>
+		<div onclick="goToSlide(2)" id="dot-2" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s;"></div>
+		<div onclick="goToSlide(3)" id="dot-3" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s;"></div>
+		<div onclick="goToSlide(4)" id="dot-4" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s;"></div>
+		<div onclick="goToSlide(5)" id="dot-5" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s;"></div>
+	</div>
+	
+	<!-- Indicador de tipo de vista -->
+	<div style="position: absolute; top: 15px; right: 15px; background: rgba(0,0,0,0.7); color: white; padding: 8px 12px; border-radius: 20px; font-size: 12px; font-weight: bold;">
+		<span id="view-indicator">
+			<i class="fas fa-desktop"></i> Desktop
+		</span>
+	</div>
+</div><br><br>
+
+<div class="content">
+							<ul class="actions" style="text-align: center;">
+								<li><a href="https://luciano-osmerini.github.io/Portcor/" target="_blank" class="button primary large herreria-button-special" data-translate="btn-herreria">Portcor Herrería</a></li>
+							</ul></p>
+
+<strong data-translate="cv-users-title">CV para Usuarios</strong><br>
+<span data-translate="cv-users-description">Desarrollo de currículums vitae digitales profesionales con diseños modernos, interactivos y completamente responsive. Portfolio con múltiples proyectos que destacan diferentes estilos y enfoques profesionales.</span><br><br>
+
+<!-- CARRUSEL PRINCIPAL DE CVs -->
+<div style="position: relative; max-width: 100%; margin: 20px 0; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.5); background: linear-gradient(45deg, #1a1a1a, #2c2c2c, #1a1a1a);">
+	
+	<!-- Contenedor principal del carrusel de CVs -->
+	<div id="cv-main-carousel-container" style="display: flex; transition: transform 0.8s ease-in-out;">
+		
+		<!-- CV 1: René Armas -->
+		<div class="cv-project-slide" style="min-width: 100%; padding: 30px; background: rgba(0,0,0,0.8); margin: 10px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1);">
+			<div style="text-align: center; margin-bottom: 20px;">
+				<h3 style="color: #ffffff; margin: 0 0 10px 0; font-size: 24px; font-weight: 700; text-shadow: 0 2px 4px rgba(0,0,0,0.5);" data-translate="cv-rene-title">CV René Armas</h3>
+				<p style="color: #cccccc; margin: 0; font-size: 16px;" data-translate="cv-rene-subtitle">Curriculum vitae interactivo con diseño profesional moderno</p>
+			</div>
+			
+			<!-- Carrusel interno CV René -->
+			<div style="position: relative; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+				<div id="rene-carousel-container" style="display: flex; transition: transform 0.5s ease-in-out;">
+					<div style="min-width: 100%; position: relative;">
+						<img src="images/cv1.jpg" alt="CV René - Página Principal" style="width: 100%; height: 300px; object-fit: cover;">
+						<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 20px;">
+							<h4 style="margin: 0; font-size: 18px;">Página Principal - Desktop</h4>
+							<p style="margin: 5px 0 0 0; font-size: 14px;">Vista principal del CV con diseño profesional</p>
+						</div>
+					</div>
+					<div style="min-width: 100%; position: relative;">
+						<img src="images/cv2.jpg" alt="CV René - Experiencia" style="width: 100%; height: 300px; object-fit: cover;">
+						<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 20px;">
+							<h4 style="margin: 0; font-size: 18px;">Experiencia Profesional - Desktop</h4>
+							<p style="margin: 5px 0 0 0; font-size: 14px;">Sección detallada de experiencia laboral</p>
+						</div>
+					</div>
+					<div style="min-width: 100%; position: relative;">
+						<img src="images/cv3.jpg" alt="CV René - Habilidades" style="width: 100%; height: 300px; object-fit: cover;">
+						<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 20px;">
+							<h4 style="margin: 0; font-size: 18px;">Habilidades y Competencias - Desktop</h4>
+							<p style="margin: 5px 0 0 0; font-size: 14px;">Presentación visual de habilidades técnicas</p>
+						</div>
+					</div>
+					<div style="min-width: 100%; position: relative;">
+						<img src="images/cv4.jpg" alt="CV René - Móvil Principal" style="width: 50%; height: 300px; object-fit: cover; margin: 0 auto; display: block;">
+						<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 20px;">
+							<h4 style="margin: 0; font-size: 18px;">Vista Móvil - Principal</h4>
+							<p style="margin: 5px 0 0 0; font-size: 14px;">Diseño responsive optimizado para móviles</p>
+						</div>
+					</div>
+					<div style="min-width: 100%; position: relative;">
+						<img src="images/cv5.jpg" alt="CV René - Móvil Experiencia" style="width: 50%; height: 300px; object-fit: cover; margin: 0 auto; display: block;">
+						<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 20px;">
+							<h4 style="margin: 0; font-size: 18px;">Vista Móvil - Experiencia</h4>
+							<p style="margin: 5px 0 0 0; font-size: 14px;">Interfaz móvil intuitiva y profesional</p>
+						</div>
+					</div>
+					<div style="min-width: 100%; position: relative;">
+						<img src="images/cv6.jpg" alt="CV René - Móvil Contacto" style="width: 50%; height: 300px; object-fit: cover; margin: 0 auto; display: block;">
+						<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 20px;">
+							<h4 style="margin: 0; font-size: 18px;">Vista Móvil - Contacto</h4>
+							<p style="margin: 5px 0 0 0; font-size: 14px;">Formulario de contacto optimizado</p>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Navegación carrusel interno René -->
+				<button onclick="previousReneSlide()" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: rgba(255,255,255,0.9); border: none; border-radius: 50%; width: 35px; height: 35px; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.3); transition: all 0.3s; z-index: 10;">
+					<i class="fas fa-chevron-left" style="color: #333; font-size: 14px;"></i>
+				</button>
+				<button onclick="nextReneSlide()" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: rgba(255,255,255,0.9); border: none; border-radius: 50%; width: 35px; height: 35px; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.3); transition: all 0.3s; z-index: 10;">
+					<i class="fas fa-chevron-right" style="color: #333; font-size: 14px;"></i>
+				</button>
+				
+				<!-- Indicadores carrusel interno René -->
+				<div style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); display: flex; gap: 6px; z-index: 10;">
+					<div id="rene-dot-0" onclick="goToReneSlide(0)" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.8); cursor: pointer; transition: all 0.3s;"></div>
+					<div id="rene-dot-1" onclick="goToReneSlide(1)" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s;"></div>
+					<div id="rene-dot-2" onclick="goToReneSlide(2)" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s;"></div>
+					<div id="rene-dot-3" onclick="goToReneSlide(3)" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s;"></div>
+					<div id="rene-dot-4" onclick="goToReneSlide(4)" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s;"></div>
+					<div id="rene-dot-5" onclick="goToReneSlide(5)" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s;"></div>
+				</div>
+			</div>
+			
+			<!-- Botón CV René -->
+			<div style="text-align: center; margin-top: 20px;">
+				<a href="https://luciano-osmerini.github.io/CVarmas/" target="_blank" class="button primary large cv-button-special" data-translate="btn-cv-rene">Ver CV René Armas</a>
+			</div>
+		</div>
+		
+		<!-- CV 2: Romina Romero -->
+		<div class="cv-project-slide" style="min-width: 100%; padding: 30px; background: rgba(0,0,0,0.8); margin: 10px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1);">
+			<div style="text-align: center; margin-bottom: 20px;">
+				<h3 style="color: #ffffff; margin: 0 0 10px 0; font-size: 24px; font-weight: 700; text-shadow: 0 2px 4px rgba(0,0,0,0.5);" data-translate="cv-romina-title">CV Romina Romero</h3>
+				<p style="color: #cccccc; margin: 0; font-size: 16px;" data-translate="cv-romina-subtitle">Portfolio digital profesional con diseño elegante y moderno</p>
+			</div>
+			
+			<!-- Carrusel interno CV Romina -->
+			<div style="position: relative; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+				<div id="romina-carousel-container" style="display: flex; transition: transform 0.5s ease-in-out;">
+					<div style="min-width: 100%; position: relative;">
+						<img src="images/cvr1.jpg" alt="CV Romina - Página Principal" style="width: 100%; height: 300px; object-fit: cover;">
+						<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 20px;">
+							<h4 style="margin: 0; font-size: 18px;">Página Principal - Desktop</h4>
+							<p style="margin: 5px 0 0 0; font-size: 14px;">Vista principal del CV con diseño profesional y moderno</p>
+						</div>
+					</div>
+					<div style="min-width: 100%; position: relative;">
+						<img src="images/cvr2.jpg" alt="CV Romina - Experiencia" style="width: 100%; height: 300px; object-fit: cover;">
+						<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 20px;">
+							<h4 style="margin: 0; font-size: 18px;">Experiencia Profesional - Desktop</h4>
+							<p style="margin: 5px 0 0 0; font-size: 14px;">Sección detallada de trayectoria y logros profesionales</p>
+						</div>
+					</div>
+					<div style="min-width: 100%; position: relative;">
+						<img src="images/cvr3.jpg" alt="CV Romina - Habilidades" style="width: 100%; height: 300px; object-fit: cover;">
+						<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 20px;">
+							<h4 style="margin: 0; font-size: 18px;">Habilidades y Competencias - Desktop</h4>
+							<p style="margin: 5px 0 0 0; font-size: 14px;">Presentación visual de competencias técnicas y profesionales</p>
+						</div>
+					</div>
+					<div style="min-width: 100%; position: relative;">
+						<img src="images/cvr5.jpg" alt="CV Romina - Contacto" style="width: 100%; height: 300px; object-fit: cover;">
+						<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 20px;">
+							<h4 style="margin: 0; font-size: 18px;">Información de Contacto - Desktop</h4>
+							<p style="margin: 5px 0 0 0; font-size: 14px;">Datos profesionales y formulario de contacto</p>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Navegación carrusel interno Romina -->
+				<button onclick="previousRominaSlide()" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: rgba(255,255,255,0.9); border: none; border-radius: 50%; width: 35px; height: 35px; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.3); transition: all 0.3s; z-index: 10;">
+					<i class="fas fa-chevron-left" style="color: #333; font-size: 14px;"></i>
+				</button>
+				<button onclick="nextRominaSlide()" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: rgba(255,255,255,0.9); border: none; border-radius: 50%; width: 35px; height: 35px; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.3); transition: all 0.3s; z-index: 10;">
+					<i class="fas fa-chevron-right" style="color: #333; font-size: 14px;"></i>
+				</button>
+				
+				<!-- Indicadores carrusel interno Romina -->
+				<div style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); display: flex; gap: 6px; z-index: 10;">
+					<div id="romina-dot-0" onclick="goToRominaSlide(0)" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.8); cursor: pointer; transition: all 0.3s;"></div>
+					<div id="romina-dot-1" onclick="goToRominaSlide(1)" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s;"></div>
+					<div id="romina-dot-2" onclick="goToRominaSlide(2)" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s;"></div>
+					<div id="romina-dot-3" onclick="goToRominaSlide(3)" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s;"></div>
+				</div>
+			</div>
+			
+			<!-- Botón CV Romina -->
+			<div style="text-align: center; margin-top: 20px;">
+				<a href="https://luciano-osmerini.github.io/CVromii/" target="_blank" class="button primary large romina-button-special" data-translate="btn-cv-romina">Ver CV Romina Romero</a>
+			</div>
+		</div>
+	</div>
+	
+	<!-- NAVEGACIÓN PRINCIPAL DEL CARRUSEL DE CVs -->
+	<button onclick="previousCvProject()" style="position: absolute; top: 50%; left: 20px; transform: translateY(-50%); background: linear-gradient(45deg, #3498db, #2980b9); border: none; border-radius: 50%; width: 50px; height: 50px; cursor: pointer; box-shadow: 0 4px 20px rgba(52,152,219,0.4); transition: all 0.3s; z-index: 100;">
+		<i class="fas fa-chevron-left" style="color: white; font-size: 18px;"></i>
+	</button>
+	<button onclick="nextCvProject()" style="position: absolute; top: 50%; right: 20px; transform: translateY(-50%); background: linear-gradient(45deg, #3498db, #2980b9); border: none; border-radius: 50%; width: 50px; height: 50px; cursor: pointer; box-shadow: 0 4px 20px rgba(52,152,219,0.4); transition: all 0.3s; z-index: 100;">
+		<i class="fas fa-chevron-right" style="color: white; font-size: 18px;"></i>
+	</button>
+	
+	<!-- INDICADORES PRINCIPALES -->
+	<div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 15px; z-index: 100;">
+		<div id="cv-project-dot-0" onclick="goToCvProject(0)" style="width: 16px; height: 16px; border-radius: 50%; background: linear-gradient(45deg, #3498db, #2980b9); cursor: pointer; transition: all 0.3s; box-shadow: 0 2px 10px rgba(52,152,219,0.5);"></div>
+		<div id="cv-project-dot-1" onclick="goToCvProject(1)" style="width: 16px; height: 16px; border-radius: 50%; background: rgba(255,255,255,0.5); cursor: pointer; transition: all 0.3s; border: 2px solid #3498db;"></div>
+	</div>
+	
+	<!-- INDICADOR DE PROYECTO ACTUAL -->
+	<div id="cv-project-indicator" style="position: absolute; top: 20px; left: 50%; transform: translateX(-50%); background: linear-gradient(45deg, #2c3e50, #34495e); color: white; padding: 12px 20px; border-radius: 25px; font-size: 14px; font-weight: bold; box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 100;">
+		<i class="fas fa-file-alt"></i> CV René Armas (1/2)
+	</div>
+</div>
+
+<span data-translate="spa-project">Sitio Web para Spa Urbano. Se desarrollo una pagina completa en la cual se puede observar los tratamientos que se realizan, adquirir productos y solicitar turnos online con distintos enlaces a sus respectivas redes y vias de comunicacion</span>
+
+<!-- Carrusel de imágenes JV Spa -->
+<div style="position: relative; max-width: 100%; margin: 20px 0; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+	<div id="cv-carousel-container" style="display: flex; transition: transform 0.5s ease-in-out;">
+		<div style="min-width: 100%; position: relative;">
+			<img src="images/jvspa.jpg" alt="JV Spa - Página Principal" style="width: 100%; height: 300px; object-fit: cover;">
+			<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 20px;">
+				<h4 style="margin: 0; font-size: 18px;">Página Principal - Desktop</h4>
+				<p style="margin: 5px 0 0 0; font-size: 14px;">Vista principal del sitio web con diseño elegante</p>
+			</div>
+		</div>
+		<div style="min-width: 100%; position: relative;">
+			<img src="images/jvspa2.jpg" alt="JV Spa - Servicios" style="width: 100%; height: 300px; object-fit: cover;">
+			<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 20px;">
+				<h4 style="margin: 0; font-size: 18px;">Servicios Destacados - Desktop</h4>
+				<p style="margin: 5px 0 0 0; font-size: 14px;">Catálogo completo de tratamientos y servicios</p>
+			</div>
+		</div>
+		<div style="min-width: 100%; position: relative;">
+			<img src="images/jvspa3.jpg" alt="JV Spa - Profesional" style="width: 100%; height: 300px; object-fit: cover;">
+			<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 20px;">
+				<h4 style="margin: 0; font-size: 18px;">Equipo Profesional - Desktop</h4>
+				<p style="margin: 5px 0 0 0; font-size: 14px;">Presentación del equipo especializado</p>
+			</div>
+		</div>
+		<div style="min-width: 100%; position: relative;">
+			<img src="images/jvspacel1.jpg" alt="JV Spa - Móvil Principal" style="width: 100%; height: 300px; object-fit: cover;">
+			<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 20px;">
+				<h4 style="margin: 0; font-size: 18px;">Vista Móvil - Principal</h4>
+				<p style="margin: 5px 0 0 0; font-size: 14px;">Diseño responsive optimizado para móviles</p>
+			</div>
+		</div>
+		<div style="min-width: 100%; position: relative;">
+			<img src="images/jvspacel3.jpg" alt="JV Spa - Móvil Servicios" style="width: 100%; height: 300px; object-fit: cover;">
+			<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 20px;">
+				<h4 style="margin: 0; font-size: 18px;">Vista Móvil - Servicios</h4>
+				<p style="margin: 5px 0 0 0; font-size: 14px;">Interfaz móvil intuitiva y fácil navegación</p>
+			</div>
+		</div>
+		<div style="min-width: 100%; position: relative;">
+			<img src="images/jvspacel4.jpg" alt="JV Spa - Móvil Contacto" style="width: 100%; height: 300px; object-fit: cover;">
+			<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 20px;">
+				<h4 style="margin: 0; font-size: 18px;">Vista Móvil - Contacto</h4>
+				<p style="margin: 5px 0 0 0; font-size: 14px;">Formularios y contacto optimizados</p>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Botones de navegación para CV -->
+	<button onclick="previousCvSlide()" style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(255,255,255,0.8); border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.3); transition: all 0.3s;">
+		<i class="fas fa-chevron-left" style="color: #333;"></i>
+	</button>
+	<button onclick="nextCvSlide()" style="position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(255,255,255,0.8); border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.3); transition: all 0.3s;">
+		<i class="fas fa-chevron-right" style="color: #333;"></i>
+	</button>
+	
+	<!-- Indicadores para CV -->
+	<div style="position: absolute; bottom: 15px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px;">
+		<div id="cv-dot-0" onclick="goToCvSlide(0)" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.8); cursor: pointer; transition: all 0.3s;"></div>
+		<div id="cv-dot-1" onclick="goToCvSlide(1)" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s;"></div>
+		<div id="cv-dot-2" onclick="goToCvSlide(2)" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s;"></div>
+		<div id="cv-dot-3" onclick="goToCvSlide(3)" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s;"></div>
+		<div id="cv-dot-4" onclick="goToCvSlide(4)" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s;"></div>
+		<div id="cv-dot-5" onclick="goToCvSlide(5)" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s;"></div>
+	</div>
+	
+	<!-- Indicador de vista CV -->
+	<div id="cv-view-indicator" style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.7); color: white; padding: 8px 12px; border-radius: 20px; font-size: 12px; font-weight: bold;">
+		<i class="fas fa-desktop"></i> Desktop
+	</div>
+</div><br><br>
+
+<div class="content">
+							<ul class="actions" style="text-align: center;">
+								<li><a href="https://luciano-osmerini.github.io/JVspa/" target="_blank" class="button primary large spa-button-special" data-translate="btn-spa">JV Spa Urbano</a></li>
+							</ul></p>
+
+<strong data-translate="turnero-project-title">Turnero Online JV Spa:</strong><br>
+<span data-translate="turnero-project-description">Sistema de reservas online desarrollado específicamente para el Spa JV, permitiendo a los clientes agendar turnos de manera fácil y rápida. Incluye gestión de horarios, confirmación automática y panel administrativo.</span><br><br>
+
+<!-- Carrusel de imágenes Turnero JV Spa -->
+<div style="position: relative; max-width: 100%; margin: 20px 0; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+	<div id="turnero-carousel-container" style="display: flex; transition: transform 0.5s ease-in-out;">
+		<div style="min-width: 100%; position: relative;">
+			<img src="images/Turnerojvspa.jpg" alt="Turnero JV Spa - Sistema de Reservas" style="width: 100%; height: 300px; object-fit: cover;">
+			<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 20px;">
+				<h4 style="margin: 0; font-size: 18px;">Sistema de Turnos Online - Desktop</h4>
+				<p style="margin: 5px 0 0 0; font-size: 14px;">Plataforma completa para gestión de reservas y citas</p>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Botones de navegación para Turnero -->
+	<button onclick="previousTurneroSlide()" style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(255,255,255,0.8); border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.3); transition: all 0.3s;">
+		<i class="fas fa-chevron-left" style="color: #333;"></i>
+	</button>
+	<button onclick="nextTurneroSlide()" style="position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(255,255,255,0.8); border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.3); transition: all 0.3s;">
+		<i class="fas fa-chevron-right" style="color: #333;"></i>
+	</button>
+	
+	<!-- Indicadores para Turnero -->
+	<div style="position: absolute; bottom: 15px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px;">
+		<div id="turnero-dot-0" onclick="goToTurneroSlide(0)" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.8); cursor: pointer; transition: all 0.3s;"></div>
+	</div>
+	
+	<!-- Indicador de vista Turnero -->
+	<div id="turnero-view-indicator" style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.7); color: white; padding: 8px 12px; border-radius: 20px; font-size: 12px; font-weight: bold;">
+		<i class="fas fa-desktop"></i> Desktop
+	</div>
+</div><br><br>
+
+<div class="content">
+							<ul class="actions" style="text-align: center;">
+								<li><a href="https://jvspa.github.io/JVspa-turnero/" target="_blank" class="button primary large turnero-button-special" data-translate="btn-turnero">Turnero Online JV Spa</a></li>
+							</ul></p>
+							</article>
+							
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Designed by: <a href="">Osmerini Luciano</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+		<div id="bg">
+			<div id="particles-js"></div>
+		</div>
+
+		<!-- Scripts -->
+			<script type="text/javascript" src="assets/js/particles.min.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			
+			<!-- Translation System -->
+			<script>
+				// Translation data
+				const translations = {
+					es: {
+						"header-subtitle": "Desarrollador Front end & Soporte IT",
+						"nav-about": "Sobre Mi",
+						"nav-work": "Trabajos",
+						"nav-studies": "Estudios",
+						"nav-freelance": "Freelance",
+						"nav-cv": "Curriculum",
+						"about-title": "Sobre Mi",
+						"about-text": "Soy profesional en Tecnologías de la Información, apasionado por sus diversas áreas. Desde temprana edad, me familiaricé con computadoras y sistemas, lo que me permitió adquirir una amplia experiencia en administración de sistemas, soporte técnico y desarrollo.<br><br>Estoy especializado en la resolución de incidencias IT y automatización de procesos, habilidades que me permiten identificar y resolver problemas técnicos de manera eficaz, brindando soporte a usuarios finales. Poseo conocimientos en redes, seguridad informática, bases de datos y herramientas de gestión IT.<br><br>Destaco por mi capacidad para trabajar en equipo y mi responsabilidad al mejorar sistemas y procesos tecnológicos en entornos corporativos. Cuento con más de 6 años de experiencia en manejo de bases de datos y soporte técnico.",
+						"contact-interest": "¿Interesado en trabajar conmigo?",
+						"contact-email": "Contactar por Email",
+						"contact-whatsapp": "WhatsApp",
+						"work-title": "Empleos/Cargos",
+						"work-dev-title": "Desarrollador Jr – Atento S.A.",
+						"work-dev-date": "Mayo 2025 – Actualidad",
+						"work-dev-area": "Área de Transformación:",
+						"work-dev-desc": "Desarrollo y ejecuto proyectos especializados utilizando <strong>Python integrado con SQL</strong> para análisis de datos y automatización de procesos en web CRM con <strong>HTML</strong> y <strong>Bootstrap.</strong>",
+						"work-analyst-title": "Analista Técnico Jr. en Soporte IT – Atento S.A.",
+						"work-analyst-date": "Septiembre 2022 – Actualidad",
+						"work-analyst-subtitle": "Soporte Técnico Especializado:",
+						"work-analyst-intro": "Me especializo en la atención y resolución de incidentes de primer y segundo nivel, garantizando diagnósticos precisos y soluciones efectivas. Mis responsabilidades técnicas incluyen:",
+						"work-infra-title": "Gestión integral de infraestructura:",
+						"work-infra-desc": "Instalación, configuración y mantenimiento de hardware y software en equipos de escritorio y portátiles.",
+						"work-ticketing-title": "Administración de sistemas de ticketing:",
+						"work-ticketing-desc": "Manejo avanzado de <em>ServiceNow</em> y <em>SelfService</em> para registro, priorización y resolución de incidencias.",
+						"work-database-title": "Gestión de bases de datos empresariales:",
+						"work-database-desc": "Administración de <em>MySQL</em>, <em>SQL Server</em>, <em>Active Directory</em> y configuraciones especializadas en <em>Regedit</em>.",
+						"work-remote-title": "Soporte técnico remoto:",
+						"work-remote-desc": "Implementación de soluciones mediante <em>ConfigMGR</em>, <em>TeamViewer</em> y <em>AnyDesk</em> para asistencia en múltiples ubicaciones.",
+						"work-network-title": "Administración de redes corporativas:",
+						"work-network-desc": "Diagnóstico y resolución de problemas en redes <em>LAN/Wi-Fi</em>, configuración de routers empresariales y soporte técnico en conexiones <em>VPN</em>.",
+						"work-maintenance-title": "Mantenimiento preventivo especializado:",
+						"work-maintenance-desc": "Programas de mantenimiento, limpieza técnica y reemplazo estratégico de componentes.",
+						"work-docs-title": "Documentación técnica profesional:",
+						"work-docs-desc": "Elaboración de manuales especializados, procedimientos técnicos y desarrollo de <em>bases de conocimiento corporativas</em>.",
+						"work-collaboration-title": "Colaboración interdisciplinaria:",
+						"work-collaboration-desc": "Trabajo conjunto con equipos de infraestructura y liderazgo en la <em>implementación</em>, testing y despliegue de nuevas tecnologías empresariales.",
+						"studies-title": "Formación",
+						"studies-subtitle": "ESTUDIOS",
+						"studies-school": "TECLAB Instituto Técnico Superior",
+						"studies-current": "2023 - Actualidad         Técnico Superior en Programación, cursando 2° año",
+						"studies-completed": "2023 - 2024                     Auxiliar en Programación, Finalizado",
+						"technologies-title": " Empleo los siguientes lenguajes y tecnologías:",
+						"skills-level-title": "Nivel de Habilidades Técnicas:",
+						"skill-intermediate-70": "Intermedio (70%)",
+						"skill-intermediate-50": "Intermedio (50%)",
+						"skill-advanced-85": "Avanzado (85%)",
+						"professional-skills-title": "Habilidades Profesionales:",
+						"skill-hardware": "Experto en Hardware de sistemas PC",
+						"skill-english": "Inglés: Medio-Fluido",
+						"skill-aws": "AWS: Nivel Inicial",
+						"skill-uxui": "Prototipado UX/UI: Nivel Intermedio-Avanzado",
+						"freelance-title": "Freelance",
+						"freelance-subtitle": "Desarrollo Front-end",
+						"freelance-description": "Creo interfaces web atractivas y funcionales, optimizadas para todos los dispositivos. Trabajo de forma remota entregando proyectos con altos estándares de calidad.",
+						"featured-projects": "Proyectos destacados:",
+						"inmobiliaria-project": "Sitio Web para Inmobiliaria. Plataforma web moderna para inmobiliaria con catálogo de propiedades interactivo, búsqueda avanzada y sistema de contacto. <strong>Proyecto en desarrollo - Próximamente disponible</strong>",
+						"btn-inmobiliaria": "Ver Demo - Inmobiliaria",
+						"herreria-project": "Sitio Web para Herreria. Se desarrollo una pagina completa en la cual se pueden solicitar distintos servicios de herreria, solicitar turnos online con distintos enlaces a sus respectivas redes y vias de comunicacion",
+						"btn-herreria": "Portcor Herrería",
+						"cv-users-title": "CV para Usuarios",
+						"cv-users-description": "Desarrollo de currículums vitae digitales profesionales con diseños modernos, interactivos y completamente responsive. Portfolio con múltiples proyectos que destacan diferentes estilos y enfoques profesionales.",
+						"cv-rene-title": "CV René Armas",
+						"cv-rene-subtitle": "Curriculum vitae interactivo con diseño profesional moderno",
+						"btn-cv-rene": "Ver CV René Armas",
+						"cv-romina-title": "CV Romina Romero",
+						"cv-romina-subtitle": "Portfolio digital profesional con diseño elegante y moderno",
+						"btn-cv-romina": "Ver CV Romina Romero",
+						"spa-project": "Sitio Web para Spa Urbano. Se desarrollo una pagina completa en la cual se puede observar los tratamientos que se realizan, adquirir productos y solicitar turnos online con distintos enlaces a sus respectivas redes y vias de comunicacion",
+						"btn-spa": "JV Spa Urbano",
+						"turnero-project-title": "Turnero Online JV Spa:",
+						"turnero-project-description": "Sistema de reservas online desarrollado específicamente para el Spa JV, permitiendo a los clientes agendar turnos de manera fácil y rápida. Incluye gestión de horarios, confirmación automática y panel administrativo.",
+						"btn-turnero": "Turnero Online JV Spa",
+						"footer-text": "&copy; Designed by: <a href=\"\">Osmerini Luciano</a>."
+					},
+					en: {
+						"header-subtitle": "Front-end Developer & IT Support",
+						"nav-about": "About Me",
+						"nav-work": "Work",
+						"nav-studies": "Education",
+						"nav-freelance": "Freelance",
+						"nav-cv": "Resume",
+						"about-title": "About Me",
+						"about-text": "I am an Information Technology professional, passionate about its various areas. From an early age, I became familiar with computers and systems, which allowed me to acquire extensive experience in system administration, technical support, and development.<br><br>I specialize in IT incident resolution and process automation, skills that allow me to identify and solve technical problems effectively, providing support to end users. I have knowledge in networks, computer security, databases, and IT management tools.<br><br>I stand out for my ability to work in a team and my responsibility in improving systems and technological processes in corporate environments. I have more than 6 years of experience in database management and technical support.",
+						"contact-interest": "Interested in working with me?",
+						"contact-email": "Contact via Email",
+						"contact-whatsapp": "WhatsApp",
+						"work-title": "Employment/Positions",
+						"work-dev-title": "Jr. Developer – Atento S.A.",
+						"work-dev-date": "May 2025 – Present",
+						"work-dev-area": "Transformation Area:",
+						"work-dev-desc": "I develop and execute specialized projects using <strong>Python integrated with SQL</strong> for data analysis and process automation in web CRM with <strong>HTML</strong> and <strong>Bootstrap.</strong>",
+						"work-analyst-title": "Jr. Technical Analyst in IT Support – Atento S.A.",
+						"work-analyst-date": "September 2022 – Present",
+						"work-analyst-subtitle": "Specialized Technical Support:",
+						"work-analyst-intro": "I specialize in first and second level incident attention and resolution, ensuring accurate diagnoses and effective solutions. My technical responsibilities include:",
+						"work-infra-title": "Comprehensive infrastructure management:",
+						"work-infra-desc": "Installation, configuration, and maintenance of hardware and software on desktop and laptop computers.",
+						"work-ticketing-title": "Ticketing systems administration:",
+						"work-ticketing-desc": "Advanced management of <em>ServiceNow</em> and <em>SelfService</em> for incident registration, prioritization, and resolution.",
+						"work-database-title": "Enterprise database management:",
+						"work-database-desc": "Administration of <em>MySQL</em>, <em>SQL Server</em>, <em>Active Directory</em> and specialized configurations in <em>Regedit</em>.",
+						"work-remote-title": "Remote technical support:",
+						"work-remote-desc": "Implementation of solutions through <em>ConfigMGR</em>, <em>TeamViewer</em> and <em>AnyDesk</em> for assistance in multiple locations.",
+						"work-network-title": "Corporate network administration:",
+						"work-network-desc": "Diagnosis and resolution of problems in <em>LAN/Wi-Fi</em> networks, configuration of enterprise routers and technical support in <em>VPN</em> connections.",
+						"work-maintenance-title": "Specialized preventive maintenance:",
+						"work-maintenance-desc": "Maintenance programs, technical cleaning and strategic component replacement.",
+						"work-docs-title": "Professional technical documentation:",
+						"work-docs-desc": "Development of specialized manuals, technical procedures and development of <em>corporate knowledge bases</em>.",
+						"work-collaboration-title": "Interdisciplinary collaboration:",
+						"work-collaboration-desc": "Joint work with infrastructure teams and leadership in <em>implementation</em>, testing and deployment of new enterprise technologies.",
+						"studies-title": "Education",
+						"studies-subtitle": "STUDIES",
+						"studies-school": "TECLAB Higher Technical Institute",
+						"studies-current": "2023 - Present         Higher Technician in Programming, studying 2nd year",
+						"studies-completed": "2023 - 2024                     Programming Assistant, Completed",
+						"technologies-title": " I use the following languages and technologies:",
+						"skills-level-title": "Technical Skills Level:",
+						"skill-intermediate-70": "Intermediate (70%)",
+						"skill-intermediate-50": "Intermediate (50%)",
+						"skill-advanced-85": "Advanced (85%)",
+						"professional-skills-title": "Professional Skills:",
+						"skill-hardware": "Expert in PC Hardware systems",
+						"skill-english": "English: Intermediate-Fluent",
+						"skill-aws": "AWS: Beginner Level",
+						"skill-uxui": "UX/UI Prototyping: Intermediate-Advanced Level",
+						"freelance-title": "Freelance",
+						"freelance-subtitle": "Front-end Development",
+						"freelance-description": "I create attractive and functional web interfaces, optimized for all devices. I work remotely delivering projects with high quality standards.",
+						"featured-projects": "Featured projects:",
+						"inmobiliaria-project": "Real Estate Website. Modern web platform for real estate with interactive property catalog, advanced search and contact system. <strong>Project in development - Coming soon</strong>",
+						"btn-inmobiliaria": "View Demo - Real Estate",
+						"herreria-project": "Metalwork Website. A complete website was developed where different metalwork services can be requested, online appointments can be scheduled with different links to their respective networks and communication channels",
+						"btn-herreria": "Portcor Metalwork",
+						"cv-users-title": "User CVs",
+						"cv-users-description": "Development of professional digital resumes with modern, interactive and fully responsive designs. Portfolio with multiple projects that highlight different styles and professional approaches.",
+						"cv-rene-title": "René Armas CV",
+						"cv-rene-subtitle": "Interactive resume with modern professional design",
+						"btn-cv-rene": "View René Armas CV",
+						"cv-romina-title": "Romina Romero CV",
+						"cv-romina-subtitle": "Professional digital portfolio with elegant and modern design",
+						"btn-cv-romina": "View Romina Romero CV",
+						"spa-project": "Urban Spa Website. A complete website was developed where you can observe the treatments performed, purchase products and request online appointments with different links to their respective networks and communication channels",
+						"btn-spa": "JV Urban Spa",
+						"turnero-project-title": "JV Spa Online Appointment System:",
+						"turnero-project-description": "Online reservation system developed specifically for JV Spa, allowing customers to schedule appointments easily and quickly. Includes schedule management, automatic confirmation and administrative panel.",
+						"btn-turnero": "JV Spa Online Appointments",
+						"footer-text": "&copy; Designed by: <a href=\"\">Osmerini Luciano</a>."
+					}
+				};
+
+				// Current language
+				let currentLanguage = localStorage.getItem('portfolio-language') || 'es';
+
+				// Apply translations
+				function applyTranslations() {
+					const elements = document.querySelectorAll('[data-translate]');
+					elements.forEach(element => {
+						const key = element.getAttribute('data-translate');
+						if (translations[currentLanguage] && translations[currentLanguage][key]) {
+							element.innerHTML = translations[currentLanguage][key];
+						}
+					});
+					
+					// Update language selector
+					const langSelector = document.getElementById('current-lang');
+					const langButton = document.getElementById('lang-toggle-btn');
+					
+					if (langSelector) {
+						langSelector.textContent = currentLanguage.toUpperCase();
+					}
+					
+					// Update button style based on language
+					if (langButton) {
+						langButton.classList.remove('english-mode', 'spanish-mode');
+						
+						if (currentLanguage === 'en') {
+							langButton.classList.add('english-mode');
+							// Add subtle red glow for English
+							langButton.style.boxShadow = '0 8px 32px rgba(255, 107, 107, 0.2)';
+						} else {
+							langButton.classList.add('spanish-mode');
+							// Add subtle blue glow for Spanish
+							langButton.style.boxShadow = '0 8px 32px rgba(33, 150, 243, 0.2)';
+						}
+					}
+				}
+
+				// Toggle language with enhanced effects
+				function toggleLanguage() {
+					// Add ripple effect
+					createRippleEffect();
+					
+					// Change language
+					currentLanguage = currentLanguage === 'es' ? 'en' : 'es';
+					localStorage.setItem('portfolio-language', currentLanguage);
+					applyTranslations();
+					
+					// Show enhanced notification
+					showLanguageNotification();
+				}
+
+				// Create ripple effect on button click
+				function createRippleEffect() {
+					const button = document.getElementById('lang-toggle-btn');
+					const ripple = document.createElement('div');
+					
+					ripple.style.cssText = `
+						position: absolute;
+						border-radius: 50%;
+						background: rgba(255, 255, 255, 0.6);
+						transform: scale(0);
+						animation: ripple 0.6s linear;
+						pointer-events: none;
+						top: 50%;
+						left: 50%;
+						width: 20px;
+						height: 20px;
+						margin-left: -10px;
+						margin-top: -10px;
+					`;
+					
+					button.appendChild(ripple);
+					
+					setTimeout(() => {
+						if (ripple.parentNode) {
+							ripple.parentNode.removeChild(ripple);
+						}
+					}, 600);
+				}
+
+				// Show enhanced language change notification
+				function showLanguageNotification() {
+					const notification = document.createElement('div');
+					const langName = currentLanguage === 'es' ? 'Español' : 'English';
+					const flagIcon = currentLanguage === 'es' ? '🇪🇸' : '🇺🇸';
+					const accentColor = currentLanguage === 'es' ? 'rgba(33, 150, 243, 0.9)' : 'rgba(255, 107, 107, 0.9)';
+					
+					notification.style.cssText = `
+						position: fixed;
+						top: 80px;
+						right: 20px;
+						background: rgba(0, 0, 0, 0.85);
+						backdrop-filter: blur(20px);
+						-webkit-backdrop-filter: blur(20px);
+						color: white;
+						padding: 16px 24px;
+						border-radius: 12px;
+						border: 1px solid rgba(255, 255, 255, 0.1);
+						box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+						z-index: 10000;
+						font-weight: 600;
+						font-size: 14px;
+						display: flex;
+						align-items: center;
+						gap: 12px;
+						animation: slideInRight 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+						min-width: 280px;
+					`;
+					
+					notification.innerHTML = `
+						<div style="
+							width: 40px;
+							height: 40px;
+							background: ${accentColor};
+							border-radius: 50%;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							font-size: 18px;
+							box-shadow: 0 4px 15px ${accentColor.replace('0.9', '0.3')};
+						">
+							${flagIcon}
+						</div>
+						<div>
+							<div style="font-size: 16px; margin-bottom: 2px;">Language Changed</div>
+							<div style="font-size: 12px; opacity: 0.8; text-transform: uppercase; letter-spacing: 1px;">
+								Now viewing in ${langName}
+							</div>
+						</div>
+						<i class="fas fa-check" style="
+							color: #00ff88;
+							font-size: 16px;
+							animation: checkPulse 0.6s ease-out;
+						"></i>
+					`;
+					
+					document.body.appendChild(notification);
+					
+					// Enhanced animations
+					const style = document.createElement('style');
+					style.textContent = `
+						@keyframes slideInRight {
+							from {
+								opacity: 0;
+								transform: translateX(100px);
+							}
+							to {
+								opacity: 1;
+								transform: translateX(0);
+							}
+						}
+						
+						@keyframes slideOutRight {
+							from {
+								opacity: 1;
+								transform: translateX(0);
+							}
+							to {
+								opacity: 0;
+								transform: translateX(100px);
+							}
+						}
+						
+						@keyframes checkPulse {
+							0% { transform: scale(0); }
+							50% { transform: scale(1.3); }
+							100% { transform: scale(1); }
+						}
+					`;
+					document.head.appendChild(style);
+					
+					// Remove notification with smooth animation
+					setTimeout(() => {
+						notification.style.animation = 'slideOutRight 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
+						setTimeout(() => {
+							if (notification.parentNode) {
+								notification.parentNode.removeChild(notification);
+							}
+							document.head.removeChild(style);
+						}, 500);
+					}, 3500);
+				}
+
+				// Enhanced language selector hover effects
+				function setupLanguageSelectorEffects() {
+					const langButton = document.getElementById('lang-toggle-btn');
+					if (langButton) {
+						// Enhanced hover enter effect
+						langButton.addEventListener('mouseenter', function() {
+							this.style.transform = 'translateY(-3px) scale(1.08)';
+							if (currentLanguage === 'en') {
+								this.style.boxShadow = '0 15px 45px rgba(255, 107, 107, 0.4)';
+							} else {
+								this.style.boxShadow = '0 15px 45px rgba(33, 150, 243, 0.4)';
+							}
+						});
+						
+						// Enhanced hover leave effect
+						langButton.addEventListener('mouseleave', function() {
+							this.style.transform = 'translateY(0) scale(1)';
+							if (currentLanguage === 'en') {
+								this.style.boxShadow = '0 8px 32px rgba(255, 107, 107, 0.2)';
+							} else {
+								this.style.boxShadow = '0 8px 32px rgba(33, 150, 243, 0.2)';
+							}
+						});
+						
+						// Add click effect
+						langButton.addEventListener('mousedown', function() {
+							this.style.transform = 'translateY(-1px) scale(1.05)';
+						});
+						
+						langButton.addEventListener('mouseup', function() {
+							this.style.transform = 'translateY(-3px) scale(1.08)';
+						});
+					}
+				}
+
+				// Initialize translation system
+				document.addEventListener('DOMContentLoaded', function() {
+					applyTranslations();
+					setupLanguageSelectorEffects();
+				});
+			</script>
+			<script type="text/javascript">
+				particlesJS.load('particles-js', 'assets/config/particles-js.json', function() {
+					console.log('Particles.js loaded successfully');
+					// Force enable interactivity
+					if (window.pJSDom && window.pJSDom[0] && window.pJSDom[0].pJS) {
+						window.pJSDom[0].pJS.interactivity.detect_on = 'window';
+						window.pJSDom[0].pJS.interactivity.events.onhover.enable = true;
+						window.pJSDom[0].pJS.interactivity.events.onclick.enable = true;
+					}
+				});
+			</script>
+
+			<!-- Carrusel JavaScript -->
+			<script>
+				let currentSlide = 0;
+				const totalSlides = 6;
+
+				function updateCarousel() {
+					const container = document.getElementById('carousel-container');
+					const translateX = -currentSlide * 100;
+					container.style.transform = `translateX(${translateX}%)`;
+					
+					// Actualizar indicadores
+					for (let i = 0; i < totalSlides; i++) {
+						const dot = document.getElementById(`dot-${i}`);
+						if (dot) {
+							dot.style.background = i === currentSlide ? 'rgba(255,255,255,0.8)' : 'rgba(255,255,255,0.4)';
+						}
+					}
+					
+					// Actualizar indicador de vista (Desktop/Mobile)
+					const viewIndicator = document.getElementById('view-indicator');
+					if (viewIndicator) {
+						if (currentSlide <= 2) {
+							viewIndicator.innerHTML = '<i class="fas fa-desktop"></i> Desktop';
+						} else {
+							viewIndicator.innerHTML = '<i class="fas fa-mobile-alt"></i> Mobile';
+						}
+					}
+				}
+
+				function nextSlide() {
+					currentSlide = (currentSlide + 1) % totalSlides;
+					updateCarousel();
+				}
+
+				function previousSlide() {
+					currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+					updateCarousel();
+				}
+
+				function goToSlide(slideIndex) {
+					currentSlide = slideIndex;
+					updateCarousel();
+				}
+
+				// Auto-play del carrusel (opcional)
+				setInterval(nextSlide, 5000); // Cambia cada 5 segundos
+
+				// Variables y funciones para el carrusel de herrería
+				let currentHerreriaSlide = 0;
+				const totalHerreriaSlides = 6;
+
+				function updateHerreriaCarousel() {
+					const container = document.getElementById('herreria-carousel-container');
+					const translateX = -currentHerreriaSlide * 100;
+					container.style.transform = `translateX(${translateX}%)`;
+					
+					// Actualizar indicadores
+					for (let i = 0; i < totalHerreriaSlides; i++) {
+						const dot = document.getElementById(`herreria-dot-${i}`);
+						if (dot) {
+							dot.style.background = i === currentHerreriaSlide ? 'rgba(255,255,255,0.8)' : 'rgba(255,255,255,0.4)';
+						}
+					}
+					
+					// Actualizar indicador de vista (Desktop/Mobile)
+					const viewIndicator = document.getElementById('herreria-view-indicator');
+					if (viewIndicator) {
+						if (currentHerreriaSlide <= 2) {
+							viewIndicator.innerHTML = '<i class="fas fa-desktop"></i> Desktop';
+						} else {
+							viewIndicator.innerHTML = '<i class="fas fa-mobile-alt"></i> Mobile';
+						}
+					}
+				}
+
+				function nextHerreriaSlide() {
+					currentHerreriaSlide = (currentHerreriaSlide + 1) % totalHerreriaSlides;
+					updateHerreriaCarousel();
+				}
+
+				function previousHerreriaSlide() {
+					currentHerreriaSlide = (currentHerreriaSlide - 1 + totalHerreriaSlides) % totalHerreriaSlides;
+					updateHerreriaCarousel();
+				}
+
+				function goToHerreriaSlide(slideIndex) {
+					currentHerreriaSlide = slideIndex;
+					updateHerreriaCarousel();
+				}
+
+				// Auto-play del carrusel de herrería (opcional)
+				setInterval(nextHerreriaSlide, 6000); // Cambia cada 6 segundos
+
+				// Variables y funciones para el carrusel de CV
+				let currentCvSlide = 0;
+				const totalCvSlides = 6;
+
+				function updateCvCarousel() {
+					const container = document.getElementById('cv-carousel-container');
+					const translateX = -currentCvSlide * 100;
+					container.style.transform = `translateX(${translateX}%)`;
+					
+					// Actualizar indicadores
+					for (let i = 0; i < totalCvSlides; i++) {
+						const dot = document.getElementById(`cv-dot-${i}`);
+						if (dot) {
+							dot.style.background = i === currentCvSlide ? 'rgba(255,255,255,0.8)' : 'rgba(255,255,255,0.4)';
+						}
+					}
+					
+					// Actualizar indicador de vista (Desktop/Mobile)
+					const viewIndicator = document.getElementById('cv-view-indicator');
+					if (viewIndicator) {
+						if (currentCvSlide <= 2) {
+							viewIndicator.innerHTML = '<i class="fas fa-desktop"></i> Desktop';
+						} else {
+							viewIndicator.innerHTML = '<i class="fas fa-mobile-alt"></i> Mobile';
+						}
+					}
+				}
+
+				function nextCvSlide() {
+					currentCvSlide = (currentCvSlide + 1) % totalCvSlides;
+					updateCvCarousel();
+				}
+
+				function previousCvSlide() {
+					currentCvSlide = (currentCvSlide - 1 + totalCvSlides) % totalCvSlides;
+					updateCvCarousel();
+				}
+
+				function goToCvSlide(slideIndex) {
+					currentCvSlide = slideIndex;
+					updateCvCarousel();
+				}
+
+				// Auto-play del carrusel de CV (opcional)
+				setInterval(nextCvSlide, 7000); // Cambia cada 7 segundos
+
+				// Variables y funciones para el carrusel de inmobiliaria
+				let currentInmobiliariaSlide = 0;
+				const totalInmobiliariaSlides = 6;
+
+				function updateInmobiliariaCarousel() {
+					const container = document.getElementById('inmobiliaria-carousel-container');
+					const translateX = -currentInmobiliariaSlide * 100;
+					container.style.transform = `translateX(${translateX}%)`;
+					
+					// Actualizar indicadores
+					for (let i = 0; i < totalInmobiliariaSlides; i++) {
+						const dot = document.getElementById(`inmobiliaria-dot-${i}`);
+						if (dot) {
+							dot.style.background = i === currentInmobiliariaSlide ? 'rgba(255,255,255,0.8)' : 'rgba(255,255,255,0.4)';
+						}
+					}
+					
+					// Actualizar indicador de vista (Desktop/Mobile)
+					const viewIndicator = document.getElementById('inmobiliaria-view-indicator');
+					if (viewIndicator) {
+						if (currentInmobiliariaSlide <= 2) {
+							viewIndicator.innerHTML = '<i class="fas fa-desktop"></i> Desktop';
+						} else {
+							viewIndicator.innerHTML = '<i class="fas fa-mobile-alt"></i> Mobile';
+						}
+					}
+				}
+
+				function nextInmobiliariaSlide() {
+					currentInmobiliariaSlide = (currentInmobiliariaSlide + 1) % totalInmobiliariaSlides;
+					updateInmobiliariaCarousel();
+				}
+
+				function previousInmobiliariaSlide() {
+					currentInmobiliariaSlide = (currentInmobiliariaSlide - 1 + totalInmobiliariaSlides) % totalInmobiliariaSlides;
+					updateInmobiliariaCarousel();
+				}
+
+				function goToInmobiliariaSlide(slideIndex) {
+					currentInmobiliariaSlide = slideIndex;
+					updateInmobiliariaCarousel();
+				}
+
+				// Auto-play del carrusel de inmobiliaria (opcional)
+				setInterval(nextInmobiliariaSlide, 8000); // Cambia cada 8 segundos
+
+				// Variables y funciones para el carrusel de CV Romina Romero
+				let currentRominaSlide = 0;
+				const totalRominaSlides = 4;
+
+				function updateRominaCarousel() {
+					const container = document.getElementById('romina-carousel-container');
+					const translateX = -currentRominaSlide * 100;
+					container.style.transform = `translateX(${translateX}%)`;
+					
+					// Actualizar indicadores
+					for (let i = 0; i < totalRominaSlides; i++) {
+						const dot = document.getElementById(`romina-dot-${i}`);
+						if (dot) {
+							dot.style.background = i === currentRominaSlide ? 'rgba(255,255,255,0.8)' : 'rgba(255,255,255,0.4)';
+						}
+					}
+					
+					// Actualizar indicador de vista (Desktop)
+					const viewIndicator = document.getElementById('romina-view-indicator');
+					if (viewIndicator) {
+						viewIndicator.innerHTML = '<i class="fas fa-desktop"></i> Desktop';
+					}
+				}
+
+				function nextRominaSlide() {
+					currentRominaSlide = (currentRominaSlide + 1) % totalRominaSlides;
+					updateRominaCarousel();
+				}
+
+				function previousRominaSlide() {
+					currentRominaSlide = (currentRominaSlide - 1 + totalRominaSlides) % totalRominaSlides;
+					updateRominaCarousel();
+				}
+
+				function goToRominaSlide(slideIndex) {
+					currentRominaSlide = slideIndex;
+					updateRominaCarousel();
+				}
+
+				// Auto-play del carrusel de CV Romina (opcional)
+				setInterval(nextRominaSlide, 9000); // Cambia cada 9 segundos
+
+				// === CARRUSEL PRINCIPAL DE PROYECTOS CV ===
+				let currentCvProject = 0;
+				const totalCvProjects = 2;
+
+				function updateCvProjectCarousel() {
+					const container = document.getElementById('cv-main-carousel-container');
+					const translateX = -currentCvProject * 100;
+					container.style.transform = `translateX(${translateX}%)`;
+					
+					// Actualizar indicadores principales
+					for (let i = 0; i < totalCvProjects; i++) {
+						const dot = document.getElementById(`cv-project-dot-${i}`);
+						if (dot) {
+							if (i === currentCvProject) {
+								dot.style.background = 'linear-gradient(45deg, #3498db, #2980b9)';
+								dot.style.boxShadow = '0 2px 10px rgba(52,152,219,0.5)';
+								dot.style.border = 'none';
+							} else {
+								dot.style.background = 'rgba(255,255,255,0.5)';
+								dot.style.boxShadow = 'none';
+								dot.style.border = '2px solid #3498db';
+							}
+						}
+					}
+					
+					// Actualizar indicador de proyecto actual
+					const projectIndicator = document.getElementById('cv-project-indicator');
+					if (projectIndicator) {
+						const projectNames = ['CV René Armas', 'CV Romina Romero'];
+						projectIndicator.innerHTML = `<i class="fas fa-file-alt"></i> ${projectNames[currentCvProject]} (${currentCvProject + 1}/${totalCvProjects})`;
+					}
+				}
+
+				function nextCvProject() {
+					currentCvProject = (currentCvProject + 1) % totalCvProjects;
+					updateCvProjectCarousel();
+				}
+
+				function previousCvProject() {
+					currentCvProject = (currentCvProject - 1 + totalCvProjects) % totalCvProjects;
+					updateCvProjectCarousel();
+				}
+
+				function goToCvProject(projectIndex) {
+					currentCvProject = projectIndex;
+					updateCvProjectCarousel();
+				}
+
+				// Auto-play del carrusel principal de CVs (opcional)
+				setInterval(nextCvProject, 15000); // Cambia cada 15 segundos
+
+				// === CARRUSEL INTERNO CV RENÉ ===
+				let currentReneSlide = 0;
+				const totalReneSlides = 6;
+
+				function updateReneCarousel() {
+					const container = document.getElementById('rene-carousel-container');
+					const translateX = -currentReneSlide * 100;
+					container.style.transform = `translateX(${translateX}%)`;
+					
+					// Actualizar indicadores
+					for (let i = 0; i < totalReneSlides; i++) {
+						const dot = document.getElementById(`rene-dot-${i}`);
+						if (dot) {
+							dot.style.background = i === currentReneSlide ? 'rgba(255,255,255,0.8)' : 'rgba(255,255,255,0.4)';
+						}
+					}
+				}
+
+				function nextReneSlide() {
+					currentReneSlide = (currentReneSlide + 1) % totalReneSlides;
+					updateReneCarousel();
+				}
+
+				function previousReneSlide() {
+					currentReneSlide = (currentReneSlide - 1 + totalReneSlides) % totalReneSlides;
+					updateReneCarousel();
+				}
+
+				function goToReneSlide(slideIndex) {
+					currentReneSlide = slideIndex;
+					updateReneCarousel();
+				}
+
+				// Auto-play del carrusel interno René (opcional)
+				setInterval(nextReneSlide, 6000); // Cambia cada 6 segundos
+
+				// === CARRUSEL TURNERO JV SPA ===
+				let currentTurneroSlide = 0;
+				const totalTurneroSlides = 1;
+
+				function updateTurneroCarousel() {
+					const container = document.getElementById('turnero-carousel-container');
+					if (container) {
+						const translateX = -currentTurneroSlide * 100;
+						container.style.transform = `translateX(${translateX}%)`;
+						
+						// Actualizar indicadores
+						for (let i = 0; i < totalTurneroSlides; i++) {
+							const dot = document.getElementById(`turnero-dot-${i}`);
+							if (dot) {
+								dot.style.background = i === currentTurneroSlide ? 'rgba(255,255,255,0.8)' : 'rgba(255,255,255,0.4)';
+							}
+						}
+						
+						// Actualizar indicador de vista
+						const viewIndicator = document.getElementById('turnero-view-indicator');
+						if (viewIndicator) {
+							viewIndicator.innerHTML = '<i class="fas fa-desktop"></i> Desktop';
+						}
+					}
+				}
+
+				function nextTurneroSlide() {
+					currentTurneroSlide = (currentTurneroSlide + 1) % totalTurneroSlides;
+					updateTurneroCarousel();
+				}
+
+				function previousTurneroSlide() {
+					currentTurneroSlide = (currentTurneroSlide - 1 + totalTurneroSlides) % totalTurneroSlides;
+					updateTurneroCarousel();
+				}
+
+				function goToTurneroSlide(slideIndex) {
+					currentTurneroSlide = slideIndex;
+					updateTurneroCarousel();
+				}
+
+				// Auto-play del carrusel Turnero (opcional)
+				// setInterval(nextTurneroSlide, 10000); // Cambia cada 10 segundos (desactivado por ser solo 1 imagen)
+
+				// Hover effects para los botones
+				document.addEventListener('DOMContentLoaded', function() {
+					const buttons = document.querySelectorAll('[onclick*="Slide"]');
+					buttons.forEach(button => {
+						button.addEventListener('mouseenter', function() {
+							this.style.background = 'rgba(255,255,255,1)';
+							this.style.transform = 'translateY(-50%) scale(1.1)';
+						});
+						button.addEventListener('mouseleave', function() {
+							this.style.background = 'rgba(255,255,255,0.8)';
+							this.style.transform = 'translateY(-50%) scale(1)';
+						});
+					});
+				});
+			</script>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright" data-translate="footer-text">&copy; Designed by: <a href="">Osmerini Luciano</a>.</p>
+					</footer>
+
+			</div>
+
+	</body>
+</html>
