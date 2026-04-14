@@ -105,20 +105,40 @@
 							#lang-toggle-btn.spanish-mode {
 								background: rgba(33, 150, 243, 0.15);
 							}
+
+							.cv-icon-link {
+								position: relative;
+							}
+
+							.cv-badge {
+								position: absolute;
+								right: -8px;
+								bottom: -6px;
+								padding: 2px 6px;
+								font-size: 9px;
+								font-weight: 700;
+								line-height: 1;
+								border-radius: 10px;
+								background: #ffffff;
+								color: #111111;
+								border: 1px solid rgba(0, 0, 0, 0.2);
+								pointer-events: none;
+							}
 						</style>
 						
 						<div class="content">
 							<div class="inner">
 								<h1>Osmerini Luciano</h1>
-								<p data-translate="header-subtitle">Desarrollador Front end & Soporte IT<br />
+								<p data-translate="header-subtitle">Desarrollador full stack & Soporte IT<br />
 									</p>
 							</div>
 							<ul class="icons">
 									<li><a href="https://www.linkedin.com/in/luciano-osmerini/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="mailto:mi_losmerini@outlook.es?subject=Asunto%20del%20correo" target="_blank" class="icon brands fa-brands fa-google"><span class="label">mail</span></a></li>
+									<li><a href="mailto:losmerini@outlook.es?subject=Asunto%20del%20correo" target="_blank" class="icon brands fa-brands fa-google"><span class="label">mail</span></a></li>
 									<li><a href="https://wa.me/543516566274" target="_blank" class="icon brands fa-whatsapp"><span class="label">WhatsApp</span></a></li>
 									<li><a href="https://github.com/Luciano-Osmerini" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="archivos/CV_Luciano_Osmerini.EN.pdf" target="_blank" class="icon solid fa-download"><span class="label" data-translate="nav-cv">Curriculum</span></a></li>
+									<li><a href="archivos/Luciano%20Osmerini%20CV.pdf" target="_blank" class="icon solid fa-file-pdf cv-icon-link" title="CV en español"><span class="cv-badge">ES</span><span class="label" data-translate="nav-cv-es">CV Español</span></a></li>
+									<li><a href="archivos/Luciano%20Osmerini%20EN.pdf" target="_blank" class="icon solid fa-file-pdf cv-icon-link" title="CV in English"><span class="cv-badge">EN</span><span class="label" data-translate="nav-cv-en">CV English</span></a></li>
 								</ul>
 						</div>
 						<nav>
@@ -162,7 +182,7 @@
 								<p><strong data-translate="work-dev-area">Área de Transformación:</strong> <span data-translate="work-dev-desc">Desarrollo y ejecuto proyectos especializados utilizando <strong>Python integrado con SQL</strong> para análisis de datos y automatización de procesos en web CRM con <strong>HTML</strong> y <strong>Bootstrap.</strong></span><br>
 									</p>
 								
-								<h3><strong data-translate="work-analyst-title">Analista Técnico Jr. en Soporte IT – Atento S.A.</strong></h3>
+								<h3><strong data-translate="work-analyst-title">Analista Técnico Sr. en Soporte IT – Atento S.A.</strong></h3>
 								<p><em data-translate="work-analyst-date">Septiembre 2022 – Actualidad</em></p>
 								<p><strong data-translate="work-analyst-subtitle">Soporte Técnico Especializado:</strong> <span data-translate="work-analyst-intro">Me especializo en la atención y resolución de incidentes de primer y segundo nivel, garantizando diagnósticos precisos y soluciones efectivas. Mis responsabilidades técnicas incluyen:</span></p>
 								
@@ -182,7 +202,60 @@
 							<article id="about">
 								<h2 class="major" data-translate="studies-title">Formacion</h2>
 								<span class="image main"><img src="images/ima2.jpg" alt="" /></span>
-								<p><strong data-translate="studies-subtitle">ESTUDIOS</strong><br><br><span data-translate="studies-school">TECLAB Instituto Técnico Superior</span><br><ul>♦ <span data-translate="studies-current">2023 - Actualidad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Técnico Superior en Programación, cursando 2° año</span><br>♦ <span data-translate="studies-completed">2023 - 2024&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Auxiliar en Programación, Finalizado</span></ul><strong data-translate="technologies-title"> Empleo los siguientes lenguajes y tecnologías:</strong><ul><br>♦ <i class="fab fa-html5" style="color: #e34c26;"></i> HTML&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ♦ <i class="fab fa-github" style="color: #333;"></i> GitHub<br>♦ <i class="fab fa-js-square" style="color: #f7df1e;"></i> JavaScript&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ <i class="fab fa-git-alt" style="color: #f05032;"></i> GIT<br>♦ <i class="fab fa-css3-alt" style="color: #1572b6;"></i> CSS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ <i class="fas fa-rocket" style="color: #ff6c37;"></i> Postman<br>♦ <i class="fas fa-database" style="color: #336791;"></i> SQL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ♦ <i class="fas fa-code" style="color: #007acc;"></i> Visual Studio Code<br>♦ <i class="fab fa-python" style="color: #3776ab;"></i> Python<br></ul>
+								<p><strong data-translate="studies-subtitle">ESTUDIOS</strong><br><br>
+								<span data-translate="studies-school">TECLAB Instituto Técnico Superior</span><br>
+								<ul>♦ <span data-translate="studies-current">2024 - 2026, Finalizado</span></ul>
+								<div style="text-align: center; margin: 20px 0;">
+									<img src="images/Titulo.jpg" alt="Título TECLAB" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+								</div>
+								<ul>♦ <span data-translate="studies-completed">2026 - 2026, Curso con Python, Finalizado</span></ul>
+								<div style="text-align: center; margin: 20px 0;">
+									<img src="images/Certificacion.png" alt="Certificado Cursor Python" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+								</div>
+
+								<strong data-translate="technologies-title">Empleo los siguientes lenguajes y tecnologías:</strong>
+								<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 30px; margin: 20px 0;">
+									<!-- IT Tools Column -->
+									<div>
+										<h4 style="color: #ffffff; margin: 0 0 15px 0; font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 1px;" data-translate="tech-it-title">Herramientas IT</h4>
+										<ul style="list-style: none; padding: 0; margin: 0;">
+											<li style="margin: 8px 0; color: #cccccc;"><i class="fas fa-cogs" style="color: #ff9800; margin-right: 8px;"></i><span data-translate="tech-servicenow">ServiceNow - SelfService</span></li>
+											<li style="margin: 8px 0; color: #cccccc;"><i class="fas fa-lock" style="color: #2196F3; margin-right: 8px;"></i><span data-translate="tech-activedir">Active Directory - Regedit</span></li>
+											<li style="margin: 8px 0; color: #cccccc;"><i class="fas fa-desktop" style="color: #9C27B0; margin-right: 8px;"></i><span data-translate="tech-configmgr">ConfigMGR, TeamViewer y AnyDesk</span></li>
+											<li style="margin: 8px 0; color: #cccccc;"><i class="fas fa-wifi" style="color: #00BCD4; margin-right: 8px;"></i><span data-translate="tech-redes">Redes LAN/Wi-Fi y conexiones VPN</span></li>
+											<li style="margin: 8px 0; color: #cccccc;"><i class="fas fa-network-wired" style="color: #4CAF50; margin-right: 8px;"></i><span data-translate="tech-vlan">Configuración VLANs, IP, DNS, Fortinet, RDP</span></li>
+											<li style="margin: 8px 0; color: #cccccc;"><i class="fab fa-windows" style="color: #0078D4; margin-right: 8px;"></i><span data-translate="tech-os">Windows y macOS</span></li>
+											<li style="margin: 8px 0; color: #cccccc;"><i class="fas fa-cloud" style="color: #2196F3; margin-right: 8px;"></i><span data-translate="tech-cloud">SaaS, Google Workspace, Microsoft 365</span></li>
+											<li style="margin: 8px 0; color: #cccccc;"><i class="fas fa-file-excel" style="color: #217346; margin-right: 8px;"></i><span data-translate="tech-office">Paquete Microsoft Office</span></li>
+										</ul>
+									</div>
+
+									<!-- Programming Languages Column -->
+									<div>
+										<h4 style="color: #ffffff; margin: 0 0 15px 0; font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 1px;" data-translate="tech-lang-title">Lenguajes de Programación</h4>
+										<ul style="list-style: none; padding: 0; margin: 0;">
+											<li style="margin: 8px 0; color: #cccccc;"><i class="fab fa-html5" style="color: #e34c26; margin-right: 8px;"></i><span data-translate="tech-html">HTML</span></li>
+											<li style="margin: 8px 0; color: #cccccc;"><i class="fab fa-css3-alt" style="color: #1572b6; margin-right: 8px;"></i><span data-translate="tech-css">CSS</span></li>
+											<li style="margin: 8px 0; color: #cccccc;"><i class="fab fa-js-square" style="color: #f7df1e; margin-right: 8px;"></i><span data-translate="tech-js">JavaScript</span></li>
+											<li style="margin: 8px 0; color: #cccccc;"><i class="fab fa-python" style="color: #3776ab; margin-right: 8px;"></i><span data-translate="tech-python">Python</span></li>
+											<li style="margin: 8px 0; color: #cccccc;"><i class="fas fa-database" style="color: #336791; margin-right: 8px;"></i><span data-translate="tech-sql">SQL</span></li>
+										</ul>
+									</div>
+
+									<!-- Frameworks & Tools Column -->
+									<div>
+										<h4 style="color: #ffffff; margin: 0 0 15px 0; font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 1px;" data-translate="tech-frameworks-title">Frameworks y Herramientas</h4>
+										<ul style="list-style: none; padding: 0; margin: 0;">
+											<li style="margin: 8px 0; color: #cccccc;"><i class="fab fa-react" style="color: #61DAFB; margin-right: 8px;"></i><span data-translate="tech-react">React</span></li>
+											<li style="margin: 8px 0; color: #cccccc;"><i class="fas fa-arrow-right" style="color: #000000; margin-right: 8px;"></i><span data-translate="tech-nextjs">Next.js</span></li>
+											<li style="margin: 8px 0; color: #cccccc;"><i class="fas fa-flask" style="color: #FF6B6B; margin-right: 8px;"></i><span data-translate="tech-flask">Flask</span></li>
+											<li style="margin: 8px 0; color: #cccccc;"><i class="fab fa-github" style="color: #333; margin-right: 8px;"></i><span data-translate="tech-github">GitHub</span></li>
+											<li style="margin: 8px 0; color: #cccccc;"><i class="fab fa-git-alt" style="color: #f05032; margin-right: 8px;"></i><span data-translate="tech-git">Git</span></li>
+											<li style="margin: 8px 0; color: #cccccc;"><i class="fas fa-rocket" style="color: #ff6c37; margin-right: 8px;"></i><span data-translate="tech-postman">Postman</span></li>
+											<li style="margin: 8px 0; color: #cccccc;"><i class="fas fa-code" style="color: #007acc; margin-right: 8px;"></i><span data-translate="tech-vscode">Visual Studio Code</span></li>
+										</ul>
+									</div>
+								</div>
 
 <strong data-translate="skills-level-title">Nivel de Habilidades Técnicas:</strong><br><br>
 <div style="margin: 20px 0;">
@@ -230,7 +303,7 @@
 <strong data-translate="professional-skills-title">Habilidades Profesionales:</strong><br><br>
 <ul>
     <li><i class="fas fa-tools" style="color: #666;"></i> <span data-translate="skill-hardware">Experto en Hardware de sistemas PC</span></li>
-    <li><i class="fas fa-globe" style="color: #4285f4;"></i> <span data-translate="skill-english">Inglés: Medio-Fluido</span></li>
+    <li><i class="fas fa-globe" style="color: #4285f4;"></i> <span data-translate="skill-english">Inglés: Avanzado-Fluido</span></li>
     <li><i class="fab fa-aws" style="color: #ff9900;"></i> <span data-translate="skill-aws">AWS: Nivel Inicial</span></li>
     <li><i class="fas fa-paint-brush" style="color: #ff6b6b;"></i> <span data-translate="skill-uxui">Prototipado UX/UI: Nivel Intermedio-Avanzado</span></li>
 </ul>
@@ -718,12 +791,14 @@
 			<script>
 				// Translation data
 				const translations = {
-					es: {
-						"header-subtitle": "Desarrollador Front end & Soporte IT",
+						es: {
+							"header-subtitle": "Desarrollador full stack & Soporte IT",
 						"nav-about": "Sobre Mi",
 						"nav-work": "Trabajos",
 						"nav-studies": "Estudios",
 						"nav-freelance": "Freelance",
+							"nav-cv-es": "CV Español",
+							"nav-cv-en": "CV Inglés",
 						"nav-cv": "Curriculum",
 						"about-title": "Sobre Mi",
 						"about-text": "Soy profesional en Tecnologías de la Información, apasionado por sus diversas áreas. Desde temprana edad, me familiaricé con computadoras y sistemas, lo que me permitió adquirir una amplia experiencia en administración de sistemas, soporte técnico y desarrollo.<br><br>Estoy especializado en la resolución de incidencias IT y automatización de procesos, habilidades que me permiten identificar y resolver problemas técnicos de manera eficaz, brindando soporte a usuarios finales. Poseo conocimientos en redes, seguridad informática, bases de datos y herramientas de gestión IT.<br><br>Destaco por mi capacidad para trabajar en equipo y mi responsabilidad al mejorar sistemas y procesos tecnológicos en entornos corporativos. Cuento con más de 6 años de experiencia en manejo de bases de datos y soporte técnico.",
@@ -758,8 +833,8 @@
 						"studies-title": "Formación",
 						"studies-subtitle": "ESTUDIOS",
 						"studies-school": "TECLAB Instituto Técnico Superior",
-						"studies-current": "2023 - Actualidad         Técnico Superior en Programación, cursando 2° año",
-						"studies-completed": "2023 - 2024                     Auxiliar en Programación, Finalizado",
+							"studies-current": "2024 - 2026, Finalizado",
+							"studies-completed": "2026 - 2026, Curso con Python, Finalizado",
 						"technologies-title": " Empleo los siguientes lenguajes y tecnologías:",
 						"skills-level-title": "Nivel de Habilidades Técnicas:",
 						"skill-intermediate-70": "Intermedio (70%)",
@@ -767,7 +842,7 @@
 						"skill-advanced-85": "Avanzado (85%)",
 						"professional-skills-title": "Habilidades Profesionales:",
 						"skill-hardware": "Experto en Hardware de sistemas PC",
-						"skill-english": "Inglés: Medio-Fluido",
+							"skill-english": "Inglés: Avanzado-Fluido",
 						"skill-aws": "AWS: Nivel Inicial",
 						"skill-uxui": "Prototipado UX/UI: Nivel Intermedio-Avanzado",
 						"freelance-title": "Freelance",
@@ -791,14 +866,40 @@
 						"turnero-project-title": "Turnero Online JV Spa:",
 						"turnero-project-description": "Sistema de reservas online desarrollado específicamente para el Spa JV, permitiendo a los clientes agendar turnos de manera fácil y rápida. Incluye gestión de horarios, confirmación automática y panel administrativo.",
 						"btn-turnero": "Turnero Online JV Spa",
+						"technologies-title": "Empleo los siguientes lenguajes y tecnologías:",
+						"tech-it-title": "Herramientas IT",
+						"tech-servicenow": "ServiceNow - SelfService",
+						"tech-activedir": "Active Directory - Regedit",
+						"tech-configmgr": "ConfigMGR, TeamViewer y AnyDesk",
+						"tech-redes": "Redes LAN/Wi-Fi y conexiones VPN",
+						"tech-vlan": "Configuración VLANs, IP, DNS, Fortinet, RDP",
+						"tech-os": "Windows y macOS",
+						"tech-cloud": "SaaS, Google Workspace, Microsoft 365",
+						"tech-office": "Paquete Microsoft Office",
+						"tech-lang-title": "Lenguajes de Programación",
+						"tech-html": "HTML",
+						"tech-css": "CSS",
+						"tech-js": "JavaScript",
+						"tech-python": "Python",
+						"tech-sql": "SQL",
+						"tech-frameworks-title": "Frameworks y Herramientas",
+						"tech-react": "React",
+						"tech-nextjs": "Next.js",
+						"tech-flask": "Flask",
+						"tech-github": "GitHub",
+						"tech-git": "Git",
+						"tech-postman": "Postman",
+						"tech-vscode": "Visual Studio Code",
 						"footer-text": "&copy; Designed by: <a href=\"\">Osmerini Luciano</a>."
 					},
-					en: {
+						en: {
 						"header-subtitle": "Front-end Developer & IT Support",
 						"nav-about": "About Me",
 						"nav-work": "Work",
 						"nav-studies": "Education",
 						"nav-freelance": "Freelance",
+							"nav-cv-es": "CV in Spanish",
+							"nav-cv-en": "CV in English",
 						"nav-cv": "Resume",
 						"about-title": "About Me",
 						"about-text": "I am an Information Technology professional, passionate about its various areas. From an early age, I became familiar with computers and systems, which allowed me to acquire extensive experience in system administration, technical support, and development.<br><br>I specialize in IT incident resolution and process automation, skills that allow me to identify and solve technical problems effectively, providing support to end users. I have knowledge in networks, computer security, databases, and IT management tools.<br><br>I stand out for my ability to work in a team and my responsibility in improving systems and technological processes in corporate environments. I have more than 6 years of experience in database management and technical support.",
@@ -833,8 +934,8 @@
 						"studies-title": "Education",
 						"studies-subtitle": "STUDIES",
 						"studies-school": "TECLAB Higher Technical Institute",
-						"studies-current": "2023 - Present         Higher Technician in Programming, studying 2nd year",
-						"studies-completed": "2023 - 2024                     Programming Assistant, Completed",
+							"studies-current": "2024 - 2026, Completed",
+							"studies-completed": "2026 - 2026, Python Course, Completed",
 						"technologies-title": " I use the following languages and technologies:",
 						"skills-level-title": "Technical Skills Level:",
 						"skill-intermediate-70": "Intermediate (70%)",
@@ -842,7 +943,7 @@
 						"skill-advanced-85": "Advanced (85%)",
 						"professional-skills-title": "Professional Skills:",
 						"skill-hardware": "Expert in PC Hardware systems",
-						"skill-english": "English: Intermediate-Fluent",
+							"skill-english": "English: Advanced-Fluent",
 						"skill-aws": "AWS: Beginner Level",
 						"skill-uxui": "UX/UI Prototyping: Intermediate-Advanced Level",
 						"freelance-title": "Freelance",
@@ -866,6 +967,30 @@
 						"turnero-project-title": "JV Spa Online Appointment System:",
 						"turnero-project-description": "Online reservation system developed specifically for JV Spa, allowing customers to schedule appointments easily and quickly. Includes schedule management, automatic confirmation and administrative panel.",
 						"btn-turnero": "JV Spa Online Appointments",
+						"technologies-title": "I use the following languages and technologies:",
+						"tech-it-title": "IT Tools",
+						"tech-servicenow": "ServiceNow - SelfService",
+						"tech-activedir": "Active Directory - Regedit",
+						"tech-configmgr": "ConfigMGR, TeamViewer and AnyDesk",
+						"tech-redes": "LAN/Wi-Fi Networks and VPN connections",
+						"tech-vlan": "VLANs, IP, DNS, Fortinet, RDP Configuration",
+						"tech-os": "Windows and macOS",
+						"tech-cloud": "SaaS, Google Workspace, Microsoft 365",
+						"tech-office": "Microsoft Office Suite",
+						"tech-lang-title": "Programming Languages",
+						"tech-html": "HTML",
+						"tech-css": "CSS",
+						"tech-js": "JavaScript",
+						"tech-python": "Python",
+						"tech-sql": "SQL",
+						"tech-frameworks-title": "Frameworks & Tools",
+						"tech-react": "React",
+						"tech-nextjs": "Next.js",
+						"tech-flask": "Flask",
+						"tech-github": "GitHub",
+						"tech-git": "Git",
+						"tech-postman": "Postman",
+						"tech-vscode": "Visual Studio Code",
 						"footer-text": "&copy; Designed by: <a href=\"\">Osmerini Luciano</a>."
 					}
 				};
